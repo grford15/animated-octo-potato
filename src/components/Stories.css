@@ -1,0 +1,17 @@
+.stories {
+  margin: 20px 0;
+}
+.stories-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.stories-header > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
