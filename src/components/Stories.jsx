@@ -3,7 +3,7 @@ import './Stories.css';
 
 import Story from './Story';
 
-const Stories = ({ stories }) => (
+const Stories = ({ stories, onArchive }) => (
   <div className="stories">
     <div className="stories-header">
       <span>Title</span>
@@ -12,7 +12,11 @@ const Stories = ({ stories }) => (
       <span>Points</span>
     </div>
     {(stories || []).map(story => (
-      <Story key={story.objectId} story={story} />
+      <Story
+        key={story.objectId}
+        story={story}
+        onArchive={onArchive}
+      />
     ))}
   </div>
 );
